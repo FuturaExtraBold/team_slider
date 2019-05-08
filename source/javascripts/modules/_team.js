@@ -10,6 +10,7 @@
 
   Draggable.create(".team__slider", {
     bounds: $(".team__slider-container"),
+    dragResistance: 0.4,
     throwProps: true,
     type: "x",
   });
