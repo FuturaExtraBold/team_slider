@@ -1,0 +1,39 @@
+$slide-transition: all 0.4s cubic-bezier(0.19, 1, 0.22, 1);
+
+.slide {
+  position: relative;
+  float: left;
+  width: 400px;
+  margin-right: 0;
+  &__image-container {
+    position: relative;
+  }
+  &__overlay {
+    transition: $slide-transition;
+    opacity: 0;
+  }
+  &__text-container {
+    position: relative;
+    padding: 30px;
+    transition: $slide-transition;
+    transform: translateY(10px);
+    opacity: 0;
+    color: rgba(0,0,0,0.5);
+  }
+  &__name {
+    color: $text-dark;
+  }
+  &__description {
+    font-size: 1.6rem;
+    color: $text-light;
+  }
+}
+.slide:hover {
+  .slide__overlay {
+    opacity: 1;
+  }
+  .slide__text-container {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

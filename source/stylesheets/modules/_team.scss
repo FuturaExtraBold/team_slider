@@ -1,0 +1,9 @@
+.team {
+  overflow: hidden;
+  padding: 200px 0 0;
+  &__slider {
+    cursor: grab !important;
+    transition: opacity 0.5s;
+    opacity: 0;
+  }
+}

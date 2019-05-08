@@ -1,0 +1,16 @@
+<section class="team">
+  <div class="container team__container">
+    <div class="team__text-container">
+      <p class="heading--2 team__title">The future is now</p>
+      <p class="team__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </div>
+    <div class="team__slider">
+      <% 5.times do %>
+        <%= partial "partials/components/slide", locals: { id: 1 } %>
+        <%= partial "partials/components/slide", locals: { id: 2 } %>
+        <%= partial "partials/components/slide", locals: { id: 3 } %>
+        <%= partial "partials/components/slide", locals: { id: 4 } %>
+      <% end %>
+    </div>
+  </div>
+</section>
