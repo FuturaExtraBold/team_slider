@@ -14,13 +14,14 @@ $slide-transition: all 0.4s cubic-bezier(0.19, 1, 0.22, 1);
   }
   &__text-container {
     position: relative;
-    padding: 30px;
+    padding: 30px 10px 0;
     transition: $slide-transition;
     transform: translateY(10px);
     opacity: 0;
     color: rgba(0,0,0,0.5);
   }
   &__name {
+    margin-bottom: 10px;
     color: $text-dark;
   }
   &__description {
