@@ -1,6 +1,19 @@
 .team {
   overflow: hidden;
   padding: 200px 0 0;
+  &__text-container {
+    max-width: 480px;
+    margin-bottom: 80px;
+  }
+  &__title {
+    margin-bottom: 10px;
+    color: $text-dark;
+  }
+  &__description {
+    font-size: 1.8rem;
+    margin: 0;
+    color: $text-light;
+  }
   &__slider {
     cursor: grab !important;
     transition: opacity 0.5s;

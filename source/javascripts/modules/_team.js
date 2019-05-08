@@ -9,7 +9,7 @@
   });
 
   Draggable.create(".team__slider", {
-    bounds: $(".team__container"),
+    bounds: $(".team__slider-container"),
     throwProps: true,
     type: "x",
   });
