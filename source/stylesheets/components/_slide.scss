@@ -8,6 +8,16 @@ $slide-transition: all 0.4s cubic-bezier(0.19, 1, 0.22, 1);
   &__image-container {
     position: relative;
   }
+  &__image--2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  &__image--3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
   &__overlay {
     transition: $slide-transition;
     opacity: 0;
