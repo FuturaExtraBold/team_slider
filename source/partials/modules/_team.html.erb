@@ -6,11 +6,8 @@
     </div>
     <div class="team__slider-container">
       <div class="team__slider">
-        <% 5.times do %>
-          <%= partial "partials/components/slide", locals: { id: 1 } %>
-          <%= partial "partials/components/slide", locals: { id: 2 } %>
-          <%= partial "partials/components/slide", locals: { id: 3 } %>
-          <%= partial "partials/components/slide", locals: { id: 4 } %>
+        <% data.team.each_with_index do |data, index| %>
+          <%= partial "partials/components/slide", locals: { data: data } %>
         <% end %>
       </div>
     </div>
