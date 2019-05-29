@@ -21,10 +21,6 @@ $slide-transition: all 0.4s cubic-bezier(0.19, 1, 0.22, 1);
   &__image--3 {
     @include hover-image;
   }
-  &__overlay {
-    transition: $slide-transition;
-    opacity: 0;
-  }
   &__text-container {
     position: relative;
     padding: 30px 10px 0;
@@ -43,9 +39,6 @@ $slide-transition: all 0.4s cubic-bezier(0.19, 1, 0.22, 1);
   }
 }
 .slide:hover {
-  .slide__overlay {
-    opacity: 1;
-  }
   .slide__text-container {
     transform: translateY(0);
     opacity: 1;
