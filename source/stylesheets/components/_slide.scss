@@ -1,5 +1,3 @@
-$slide-transition: all 0.4s cubic-bezier(0.19, 1, 0.22, 1);
-
 @mixin hover-image {
   position: absolute;
   top: 0;
@@ -11,7 +9,7 @@ $slide-transition: all 0.4s cubic-bezier(0.19, 1, 0.22, 1);
   position: relative;
   float: left;
   width: 400px;
-  margin-right: 0;
+  margin-right: 20px;
   &__image-container {
     position: relative;
   }
@@ -22,25 +20,22 @@ $slide-transition: all 0.4s cubic-bezier(0.19, 1, 0.22, 1);
     @include hover-image;
   }
   &__text-container {
-    position: relative;
     padding: 30px 10px 0;
-    transition: $slide-transition;
-    transform: translateY(10px);
     opacity: 0;
-    color: rgba(0,0,0,0.5);
   }
   &__name {
-    margin-bottom: 10px;
+    margin-bottom: 6px;
     color: $text-dark;
+  }
+  &__job-title {
+    font-size: 1.2rem;
+    margin-bottom: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: $text-light;
   }
   &__description {
     font-size: 1.6rem;
-    color: $text-light;
-  }
-}
-.slide:hover {
-  .slide__text-container {
-    transform: translateY(0);
-    opacity: 1;
+    color: $text-default;
   }
 }
