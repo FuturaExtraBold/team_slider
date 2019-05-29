@@ -8,6 +8,11 @@
   TweenMax.set($slider, { width: $slide.length * $slide.eq(0).outerWidth(true), opacity: 0 });
   TweenMax.to($slider, 0.5, { opacity: 1 });
 
+  // Slides
+  for (var a = 0; a < $slide.length; a++) {
+    TweenMax.from($slide.eq(a), 1, { x: 30, opacity: 0, delay: a * 0.15, ease: "easeOutExpo" });
+  }
+
   function setActiveElements(target) {
     $image2 = $(target).find(".slide__image--2");
     $image3 = $(target).find(".slide__image--3");
