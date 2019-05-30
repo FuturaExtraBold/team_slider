@@ -21,14 +21,14 @@
   function resetElements() {
     TweenMax.set($defaultImage, { opacity: 1 });
     TweenMax.set($hobbyImage, { opacity: 0 });
-    TweenMax.set($textContainer, { y: 10, opacity: 0 });
+    TweenMax.set($textContainer, { y: 0, opacity: 1 });
   }
 
   function handleSlideMouseover(event) {
     resetElements();
+    TweenMax.set($(event.currentTarget).find(".slide__text-container"), { opacity: 0, y: 0 });
     TweenMax.set($(event.currentTarget).find(".slide__image--1"), { opacity: 0 });
-    TweenMax.fromTo($(event.currentTarget).find(".slide__image--2"), animationTime, { opacity: 0.5, y: 100 }, { opacity: 1, y: 0, ease: animationEase });
-    TweenMax.fromTo($(event.currentTarget).find(".slide__text-container"), animationTime, { opacity: 0, y: 10 }, { opacity: 1, y: 0 });
+    TweenMax.fromTo($(event.currentTarget).find(".slide__image--2"), animationTime, { opacity: 0.5, y: 100 }, { opacity: 1, y: 0, scale: 1.8, ease: animationEase });
   }
 
   function handleSlideMouseout(event) {
