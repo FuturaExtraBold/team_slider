@@ -17,7 +17,7 @@ $slide-top-padding: 60px;
   }
   &__image--2 {
     position: absolute;
-    top: $slide-top-padding;
+    top: $slide-top-padding / 2;
     left: 0;
     opacity: 0;
   }

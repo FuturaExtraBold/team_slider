@@ -6,13 +6,16 @@
   var $hobbyImage = $(".slide__image--2");
   var $textContainer = $(".slide__text-container");
 
+  var animationTime = 0.6;
+  var animationEase = "easeOutExpo";
+
   // Slider
   TweenMax.set($slider, { width: $slide.length * $slide.eq(0).outerWidth(true), opacity: 0 });
   TweenMax.to($slider, 0.5, { opacity: 1 });
 
   // Slides
   for (var a = 0; a < $slide.length; a++) {
-    TweenMax.from($slide.eq(a), 1, { x: 30, opacity: 0, delay: a * 0.15, ease: "easeOutExpo" });
+    TweenMax.from($slide.eq(a), 1, { x: 30, opacity: 0, delay: a * 0.15, ease: animationEase });
   }
 
   function resetElements() {
@@ -23,9 +26,9 @@
 
   function handleSlideMouseover(event) {
     resetElements();
-    TweenMax.to($(event.currentTarget).find(".slide__image--1"), 0.2, { opacity: 0 });
-    TweenMax.to($(event.currentTarget).find(".slide__image--2"), 0.2, { opacity: 1 });
-    TweenMax.fromTo($(event.currentTarget).find(".slide__text-container"), 0.2, { y: 10, opacity: 0 }, { y: 0, opacity: 1 });
+    TweenMax.set($(event.currentTarget).find(".slide__image--1"), { opacity: 0 });
+    TweenMax.fromTo($(event.currentTarget).find(".slide__image--2"), animationTime, { opacity: 0.5, y: 100 }, { opacity: 1, y: 0, ease: animationEase });
+    TweenMax.fromTo($(event.currentTarget).find(".slide__text-container"), animationTime, { opacity: 0, y: 10 }, { opacity: 1, y: 0 });
   }
 
   function handleSlideMouseout(event) {
