@@ -8,7 +8,6 @@ $slide-top-padding: 60px;
   &__image-container {
     position: relative;
     pointer-events: none;
-    background-color: red;
   }
   &__spacer {
     position: relative;
@@ -24,7 +23,6 @@ $slide-top-padding: 60px;
   &__text-container {
     padding: 30px 10px 0;
     pointer-events: none;
-    opacity: 0;
   }
   &__name {
     margin-bottom: 6px;
