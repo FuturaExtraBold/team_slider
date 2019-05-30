@@ -2,7 +2,9 @@
 
   var $slide = $(".slide");
   var $slider = $(".team__slider");
-  var $image2, $image3, $slideText;
+  var $defaultImage = $(".slide__image--1");
+  var $hobbyImage = $(".slide__image--2");
+  var $textContainer = $(".slide__text-container");
 
   // Slider
   TweenMax.set($slider, { width: $slide.length * $slide.eq(0).outerWidth(true), opacity: 0 });
@@ -13,22 +15,21 @@
     TweenMax.from($slide.eq(a), 1, { x: 30, opacity: 0, delay: a * 0.15, ease: "easeOutExpo" });
   }
 
-  function setActiveElements(target) {
-    $image2 = $(target).find(".slide__image--2");
-    $image3 = $(target).find(".slide__image--3");
-    $slideText = $(target).find(".slide__text-container");
+  function resetElements() {
+    TweenMax.set($defaultImage, { opacity: 1 });
+    TweenMax.set($hobbyImage, { opacity: 0 });
+    TweenMax.set($textContainer, { y: 10, opacity: 0 });
   }
 
   function handleSlideMouseover(event) {
-    setActiveElements(event.currentTarget);
-    TweenMax.to($image3, 0.2, { opacity: 1 });
-    TweenMax.fromTo($slideText, 0.2, { y: 10, opacity: 0 }, { y: 0, opacity: 1 });
+    resetElements();
+    TweenMax.to($(event.currentTarget).find(".slide__image--1"), 0.2, { opacity: 0 });
+    TweenMax.to($(event.currentTarget).find(".slide__image--2"), 0.2, { opacity: 1 });
+    TweenMax.fromTo($(event.currentTarget).find(".slide__text-container"), 0.2, { y: 10, opacity: 0 }, { y: 0, opacity: 1 });
   }
 
   function handleSlideMouseout(event) {
-    setActiveElements(event.currentTarget);
-    TweenMax.set([$image2, $image3], { opacity: 0 });
-    TweenMax.set($slideText, { y: 10, opacity: 0 });
+    resetElements();
   }
 
   $slide.on("mouseover", handleSlideMouseover);

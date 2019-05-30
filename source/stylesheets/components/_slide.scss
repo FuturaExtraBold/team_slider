@@ -1,9 +1,4 @@
-@mixin hover-image {
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0;
-}
+$slide-top-padding: 60px;
 
 .slide {
   position: relative;
@@ -12,12 +7,18 @@
   padding-right: 20px;
   &__image-container {
     position: relative;
+    background-color: red;
+  }
+  &__spacer {
+    position: relative;
+    width: 100%;
+    height: $slide-top-padding;
   }
   &__image--2 {
-    @include hover-image;
-  }
-  &__image--3 {
-    @include hover-image;
+    position: absolute;
+    top: $slide-top-padding;
+    left: 0;
+    opacity: 0;
   }
   &__text-container {
     padding: 30px 10px 0;
@@ -37,5 +38,25 @@
   &__description {
     font-size: 1.6rem;
     color: $text-default;
+  }
+}
+.slide:nth-child(4n + 1) {
+  .slide__image-container {
+    background-color: #ecd2bb;
+  }
+}
+.slide:nth-child(4n + 2) {
+  .slide__image-container {
+    background-color: #c2dbe5;
+  }
+}
+.slide:nth-child(4n + 3) {
+  .slide__image-container {
+    background-color: #f2aaad;
+  }
+}
+.slide:nth-child(4n + 4) {
+  .slide__image-container {
+    background-color: #d9e0e4;
   }
 }
