@@ -25,7 +25,7 @@
 -
   id: "ben_hays"
   name: "Ben Hays"
-  title: "Senior Marketing Developer"
+  title: "Senior Front-End Developer"
 -
   id: "blake_box"
   name: "Blake Box"
@@ -69,156 +69,160 @@
 -
   id: "david_hinchman"
   name: "David Hinchman"
-  title: ""
+  title: "Video Production Genius"
 -
   id: "david_otteson"
   name: "David Otteson"
-  title: ""
+  title: "Customer Success Specialist"
 -
   id: "elissa_berg"
   name: "Elissa Berg"
-  title: ""
+  title: "Executive Assistant"
 -
   id: "erica_choi"
   name: "Erica Choi"
-  title: ""
+  title: "Events Specialist"
 -
   id: "ernest_lam"
   name: "Ernest Lam"
-  title: ""
+  title: "Customer Success Specialist"
+-
+  id: "esteban_robinson"
+  name: "Esteban Robinson"
+  title: "Photographer"
 -
   id: "forrest_holt"
   name: "Forrest Holt"
-  title: ""
+  title: "Quality Assurance Engineer"
 -
   id: "gordon_andrews"
   name: "Gordon Andrews"
-  title: ""
+  title: "Implementation Specialist"
 -
   id: "jamell_jones"
   name: "Jamell Jones"
-  title: ""
+  title: "LaunchPad Coach"
 -
   id: "jamie_wagner"
   name: "Jamie Wagner"
-  title: ""
+  title: "Senior Developer"
 -
   id: "jay_odebunmi"
   name: "Jay Odebunmi"
-  title: ""
--
-  id: "jcron"
-  name: "JCron"
-  title: "President"
+  title: "Partner Program Coordinator"
 -
   id: "jeremy_saenz"
   name: "Jeremy Saenz"
-  title: ""
+  title: "VP - Product"
 -
   id: "joe_schwab"
   name: "Joe Schwab"
-  title: ""
+  title: "Social Communication Specialist"
 -
   id: "joel_vivanco"
   name: "Joel Vivanco"
-  title: ""
+  title: "LaunchPad Services Manager"
 -
   id: "john_harzan"
   name: "John Harzan"
-  title: ""
+  title: "Customer Success Specialist"
+-
+  id: "jonathan_cronstedt"
+  name: "Jonathan Cronstedt"
+  title: "President"
 -
   id: "jose_mendoza"
   name: "Jose Mendoza"
-  title: ""
+  title: "Optimization Lead"
 -
   id: "katie_borisov"
   name: "Katie Borisov"
-  title: ""
+  title: "Developer"
 -
   id: "kaylee_graffagnino"
   name: "Kaylee Graffagnino"
-  title: ""
+  title: "Receptionist"
 -
   id: "kenny_rueter"
   name: "Kenny Rueter"
-  title: ""
+  title: "CEO"
 -
   id: "kevin_dang"
   name: "Kevin Dang"
-  title: ""
+  title: "Front-End Developer"
 -
   id: "kimberly_hudson"
   name: "Kimberly Hudson"
-  title: ""
+  title: "Senior Accountant"
 -
   id: "krystal_fontaine"
   name: "Krystal Fontaine"
-  title: ""
+  title: "Hero Communications Specialist"
 -
   id: "kyle_chong"
   name: "Kyle Chong"
-  title: ""
+  title: "Senior Developer"
 -
   id: "leonard_yambao"
   name: "Leonard Yambao"
-  title: ""
+  title: "Marketing Campaign Lead"
 -
   id: "maddi_roberts"
   name: "Maddi Roberts"
-  title: ""
+  title: "Customer Success Specialist"
 -
   id: "meagan_blanchette"
   name: "Meagan Blanchette"
-  title: ""
+  title: "Customer Success Specialist"
 -
   id: "nicolas_mansfield"
   name: "Nicolas Mansfield"
-  title: ""
+  title: "Lead Designer"
 -
   id: "patrick_macdowell"
   name: "Patrick MacDowell"
-  title: ""
+  title: "Senior Android Developer"
 -
   id: "paul_winters"
   name: "Paul Winters"
-  title: ""
+  title: "Customer Success Specialist"
 -
   id: "ryan_dunbar"
   name: "Ryan Dunbar"
-  title: ""
+  title: "Product Designer"
 -
   id: "sam_croswell"
   name: "Sam Croswell"
-  title: ""
+  title: "Senior Product Designer"
 -
   id: "scotty_nelson"
   name: "Scotty Nelson"
-  title: ""
+  title: "VP - Web Development"
 -
   id: "sean_fadling"
   name: "Sean Fadling"
-  title: ""
+  title: "Optimization Team Lead"
 -
   id: "tam_duong"
   name: "Tam Duong"
-  title: ""
+  title: "Customer Services Specialist"
 -
   id: "tony_dibernardo"
   name: "Tondy DiBernardo"
-  title: ""
+  title: "Senior Customer Success Manager"
 -
   id: "tyler_hackett"
   name: "Tyler Hackett"
-  title: ""
+  title: "Quality Assurance Lead"
 -
   id: "veronica_hejny"
   name: "Veronica Hejny"
-  title: ""
+  title: "Customer Success Specialist"
 -
   id: "will_winters"
   name: "Will Winters"
-  title: ""
+  title: "Customer Success Specialist"
 -
   id: "yesenia_marquez"
   name: "Yesenia Marquez"
-  title: ""
+  title: "Customer Success Specialist"
