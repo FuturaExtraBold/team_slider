@@ -64,3 +64,18 @@ $slide-top-padding: 60px;
     background-color: #d9e0e4;
   }
 }
+@media (max-width: $md-max) {
+  .slide {
+    width: 200px;
+    padding-right: 10px;
+    &__text-container {
+      padding: 15px 0 0;
+    }
+    &__name {
+      font-size: 1.6rem;
+    }
+    &__job-title {
+      font-size: 0.8rem;
+    }
+  }
+}

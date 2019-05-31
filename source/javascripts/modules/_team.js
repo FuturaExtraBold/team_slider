@@ -1,5 +1,6 @@
 (function($) {
 
+  var $window = $(window);
   var $slide = $(".slide");
   var $slider = $(".team__slider");
   var $defaultImage = $(".slide__image--1");
@@ -37,8 +38,15 @@
     resetElements();
   }
 
+  function handleResize(event) {
+    console.log("handleResize");
+    TweenMax.set($slider, { width: $slide.length * $slide.eq(0).outerWidth(true) });
+  }
+
   $slide.on("mouseover", handleSlideMouseover);
   $slide.on("mouseout", handleSlideMouseout);
+
+  $window.on("resize", handleResize);
 
   Draggable.create(".team__slider", {
     bounds: $(".team__slider-container"),
