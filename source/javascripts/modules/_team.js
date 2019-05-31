@@ -15,7 +15,7 @@
 
   // Slides
   for (var a = 0; a < $slide.length; a++) {
-    TweenMax.from($slide.eq(a), 1, { x: 30, opacity: 0, delay: a * 0.15, ease: animationEase });
+    TweenMax.from($slide.eq(a), 1, { x: 30, opacity: 0, delay: a * 0.1, ease: animationEase });
   }
 
   function resetElements() {
