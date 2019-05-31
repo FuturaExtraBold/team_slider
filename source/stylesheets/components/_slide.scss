@@ -9,6 +9,10 @@ $slide-top-padding: 60px;
     position: relative;
     pointer-events: none;
   }
+  &__sizer {
+    height: 1px;
+    padding-bottom: calc(125% + #{$slide-top-padding});
+  }
   &__spacer {
     position: relative;
     width: 100%;
