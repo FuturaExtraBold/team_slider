@@ -86,10 +86,10 @@
   id: "ernest_lam"
   name: "Ernest Lam"
   title: "Customer Success Specialist"
--
-  id: "esteban_robinson"
-  name: "Esteban Robinson"
-  title: "Photo Lead"
+# -
+#   id: "esteban_robinson"
+#   name: "Esteban Robinson"
+#   title: "Photo Lead"
 -
   id: "forrest_holt"
   name: "Forrest Holt"
